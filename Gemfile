@@ -20,7 +20,6 @@ gem 'refills', group: :development
 gem 'refile'
 gem 'refile-mini_magick'
 gem 'searchkick'
-# gem 'better_errors'
 gem 'font-awesome-sass'
 
 group :development, :test do
