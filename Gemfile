@@ -15,9 +15,13 @@ gem 'devise'
 gem 'omniauth-facebook'
 gem 'bourbon'
 gem 'neat'
+gem 'slim-rails'
 gem 'refills', group: :development
 gem 'refile'
+gem 'refile-mini_magick'
 gem 'searchkick'
+# gem 'better_errors'
+gem 'font-awesome-sass'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
