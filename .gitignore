@@ -18,3 +18,4 @@
 
 # Ignore initializers for devise
 /config/initializers/devise.rb
+/config/initializers/omniauth.rb
