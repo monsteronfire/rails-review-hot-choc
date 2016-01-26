@@ -12,14 +12,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Review Hot Choc Germs
 gem 'omniauth-facebook'
-# gem 'bourbon'
-# gem 'neat'
+gem 'bourbon'
+gem 'neat'
+gem 'refills', group: :development
 gem 'slim-rails'
-# gem 'refills', group: :development
-# gem 'refile'
-# gem 'refile-mini_magick'
-# gem 'searchkick'
-# gem 'font-awesome-sass'
+gem 'refile'
+gem 'refile-mini_magick'
+gem 'searchkick'
+gem 'font-awesome-sass'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
