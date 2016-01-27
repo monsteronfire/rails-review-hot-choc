@@ -7,9 +7,9 @@ html
     = csrf_meta_tags
 
   body
-    nav
+    = render "refills/navigation"
       .container
-        = render "refills/_search_bar"
+        = render "refills/search_bar"
         .navbar-brand       
           ul.nav.navbar-nav.navbar-right
             li= link_to "Sign In", "/auth/facebook"

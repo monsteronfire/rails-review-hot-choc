@@ -1,0 +1,23 @@
+header.navigation role="banner"
+  .navigation-wrapper
+    a.logo
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
+    a#js-mobile-menu.navigation-menu-button
+      MENU
+
+    nav role="navigation"
+      ul#js-navigation-menu.navigation-menu.show
+        li.nav-link
+          = link_to "Products"
+        li.nav-link
+          = link_to "About"
+        li.nav-link.more
+          = link_to "Contact"
+            ul.submenu
+              li
+                = link_to "Sub Menu"
+    .navigation-tools
+      = render "refills/search_bar"
+      ul
+        li= link_to "Sign In", "/auth/facebook"
+        li= link_to "Sign Out", "/sign_out", method: :delete
