@@ -8,12 +8,5 @@ html
 
   body
     = render "refills/navigation"
-      .container
-        = render "refills/search_bar"
-        .navbar-brand       
-          ul.nav.navbar-nav.navbar-right
-            li= link_to "Sign In", "/auth/facebook"
-            li= link_to "Sign Out", "/sign_out", method: :delete
-
     .container
       = yield

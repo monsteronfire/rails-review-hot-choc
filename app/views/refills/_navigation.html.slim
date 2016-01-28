@@ -7,17 +7,9 @@ header.navigation role="banner"
 
     nav role="navigation"
       ul#js-navigation-menu.navigation-menu.show
-        li.nav-link
-          = link_to "Products"
-        li.nav-link
-          = link_to "About"
-        li.nav-link.more
-          = link_to "Contact"
-            ul.submenu
-              li
-                = link_to "Sub Menu"
+        -if current_user
+          li= link_to "Sign Out", "/sign_out", method: :delete
+        -else
+          li= link_to "Sign In", "/auth/facebook"
     .navigation-tools
       = render "refills/search_bar"
-      ul
-        li= link_to "Sign In", "/auth/facebook"
-        li= link_to "Sign Out", "/sign_out", method: :delete
