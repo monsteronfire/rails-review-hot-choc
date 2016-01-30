@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  comment: MyString
+  rating: 1
+  cafe_id: 
+  user_id: 
+
+two:
+  title: MyString
+  comment: MyString
+  rating: 1
+  cafe_id: 
+  user_id: 
