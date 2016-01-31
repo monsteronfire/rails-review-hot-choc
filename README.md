@@ -137,3 +137,21 @@ class ApplicationController < ActionController::Base
 end
 
 ```
+
+### Generating Models
+When I generated the `cafe` model, Rails automatically pluralised it to `caves`, so in the file `config/initializers/inflections.rb`, add the following:
+```ruby
+ActiveSupport::Inflector.inflections do |inflect|
+  inflect.irregular 'cafe', 'cafes'
+end
+```
+
+To generate the cafe model, run:
+```zsh
+rails generate model cafe name:string contact:string address:string lat:float lng:float user:references
+```
+
+You'll also need to generate a model for reviews:
+```zsh
+rails generate model review title:string comment:string rating:integer cafe:references user:references
+```
