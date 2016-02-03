@@ -155,3 +155,6 @@ You'll also need to generate a model for reviews:
 ```zsh
 rails generate model review title:string comment:string rating:integer cafe:references user:references
 ```
+
+### Create Form to Add Cafe 
+#### Nested Form to add review
