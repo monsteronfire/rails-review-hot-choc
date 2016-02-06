@@ -3,6 +3,9 @@ class CafesController < ApplicationController
     render json: Cafe.all.select(:lat, :lng, :name).to_json
   end
 
+  def index
+  end
+
   def new
   end
 
@@ -19,4 +22,9 @@ class CafesController < ApplicationController
   end
 
   private
+    def set_cafe
+    end
+
+    def cafe_params
+    end
 end

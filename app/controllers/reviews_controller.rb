@@ -15,4 +15,12 @@ class ReviewsController < ApplicationController
   end
 
   private
+    def set_review
+    end
+
+    def set_cafe
+    end
+
+    def review_params
+    end
 end
