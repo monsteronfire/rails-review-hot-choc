@@ -8,8 +8,8 @@ header.navigation role="banner"
     nav role="navigation"
       ul#js-navigation-menu.navigation-menu.show
         -if current_user
-          li= link_to "Sign Out", "/sign_out", method: :delete
+          li.nav-link= link_to "Sign Out", "/sign_out", method: :delete
         -else
-          li= link_to "Sign In", "/auth/facebook"
+          li.nav-link= link_to "Sign In", "/auth/facebook"
     .navigation-tools
       = render "refills/search_bar"
