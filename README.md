@@ -158,3 +158,5 @@ rails generate model review title:string comment:string rating:integer cafe:refe
 
 ### Create Form to Add Cafe 
 #### Nested Form to add review
+
+###Templates
