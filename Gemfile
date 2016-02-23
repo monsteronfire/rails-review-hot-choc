@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Review Hot Choc Germs
+gem 'devise'
 gem 'omniauth-facebook'
 gem 'bourbon'
 gem 'neat'

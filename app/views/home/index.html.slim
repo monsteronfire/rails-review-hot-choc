@@ -1,4 +1,5 @@
-button= link_to "Add New Cafe", new_cafe_path
+-if current_user
+  button= link_to "Add New Cafe", new_cafe_path
 
 div#gmap.gmap
 input#searchbox type="text"
