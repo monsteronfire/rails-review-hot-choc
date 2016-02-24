@@ -7,10 +7,10 @@ header.navigation role="banner"
 
     nav role="navigation"
       ul#js-navigation-menu.navigation-menu.show
-        -if current_user
-          li.nav-link= link_to "Sign Out", "/sign_out", method: :delete
-        -else
-          li.nav-link= link_to "Sign In", "/auth/facebook"
+        / -if current_user
+        /   li.nav-link= link_to "Sign Out", "/sign_out", method: :delete
+        / -else
+        /   li.nav-link= link_to "Sign In", "/auth/facebook"
     .navigation-tools
       -if current_user
         p user.name

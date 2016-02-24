@@ -1,5 +1,11 @@
--if current_user
-  button= link_to "Add New Cafe", new_cafe_path
+- if user_signed_in?
+  ul.nav.navbar-nav.navbar-right
+    li= link_to "Add New Cafe", new_cafe_path
+    li= link_to "Sign Out", destroy_user_session_path, method: :delete
+- else
+  ul.nav.navbar-nav.navbar-right
+    li= link_to "Sign Up", new_user_registration_path
+    li= link_to "Sign In", new_user_session_path
 
 div#gmap.gmap
 input#searchbox type="text"

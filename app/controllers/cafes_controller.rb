@@ -1,5 +1,5 @@
 class CafesController < ApplicationController
-  before_action :find_cafe, only: [:show, :edit, :update, :destroy]
+  before_action :set_cafe, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
 
   def search
@@ -36,11 +36,11 @@ class CafesController < ApplicationController
   end
 
   private
-    def find_cafe
+    def set_cafe
       @cafe = Cafe.find(params[:id])
     end
 
     def cafe_params
-      params.require(:cafe).permit(:name)
+      params.require(:cafe).permit(:name, :contact, :address, :lat, :lng)
     end
 end
