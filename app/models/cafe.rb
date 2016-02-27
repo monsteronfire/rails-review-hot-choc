@@ -3,4 +3,6 @@ class Cafe < ActiveRecord::Base
   
   belongs_to :user
   has_many :reviews
+
+  accepts_nested_attributes_for :reviews, reject_if: :all_blank, allow_destroy: true
 end

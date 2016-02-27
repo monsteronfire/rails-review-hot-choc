@@ -7,6 +7,7 @@ class CafesController < ApplicationController
   end
 
   def index
+    @cafes = Cafe.all.order("created_at DESC")
   end
 
   def show
