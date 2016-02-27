@@ -13,5 +13,5 @@ header.navigation role="banner"
         /   li.nav-link= link_to "Sign In", "/auth/facebook"
     .navigation-tools
       -if current_user
-        p user.name
+        p = current_user.email
       = render "refills/search_bar"
