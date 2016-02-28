@@ -1,1 +1,4 @@
-h2 _form.html.slim
+= simple_form_for @review do |f|
+  = f.input :title
+  = f.input :comment
+  = f.button :submit, class: "btn btn-default"
