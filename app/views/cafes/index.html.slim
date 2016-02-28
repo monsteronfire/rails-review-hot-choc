@@ -1,1 +1,8 @@
-h2 index.html.slim
+h2 Cafes in Klang Valley
+
+- @cafes.each do |cafe|
+  p = cafe.name
+  p = cafe.contact
+  hr
+
+button =link_to "Back to Home", root_path
