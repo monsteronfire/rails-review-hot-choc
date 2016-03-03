@@ -77,8 +77,32 @@ var init = function() {
   });
 };
 
+function limitFormNesting() {
+  var createCafeForm = $('#cafe_form');
+  var nestedReviewForm = $('#cafe_form .nested-fields');
+  var links = $('#cafe_form .links a');
+
+  if(nestedReviewForm.length === 1) {
+    links.hide();
+  } else {
+    links.show();
+  }
+
+}
+
 $(document).ready(function() {
   ready();
+
+  $('#cafe_form').bind('cocoon:after-insert', function() {
+    limitFormNesting();
+  });
+
+  $('#cafe_form').bind('cocoon:after-remove', function() {
+    limitFormNesting();
+  });
+
+  limitFormNesting();
+  
 })
 
 $(document).on('page:load', function() {

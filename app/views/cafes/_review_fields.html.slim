@@ -1,4 +1,4 @@
-
-  = f.input :title
-  = f.input :comment
-  = f.button :submit, class: "btn btn-default"
+  .nested-fields
+    = f.input :title
+    = f.input :comment
+    = link_to_remove_association "Remove Review", f

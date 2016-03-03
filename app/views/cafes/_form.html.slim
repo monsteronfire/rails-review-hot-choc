@@ -1,6 +1,10 @@
-= simple_form_for @cafe do |f|
-  = f.input :name
-  = f.input :contact
-  = f.button :submit, class: "btn btn-default"
-
-  = link_to_add_association 'Add Review', f, :reviews
+#cafe-form
+  = simple_form_for @cafe, html: { id: :cafe_form } do |f|
+    fieldset.cafe-form-fields
+      = f.input :name
+      = f.input :contact
+      = f.button :submit, class: "btn btn-default"
+      = f.simple_fields_for :reviews do |review|
+        = render 'review_fields', :f => review
+      .links
+        = link_to_add_association 'Add Review', f, :reviews
