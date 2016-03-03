@@ -1,7 +1,6 @@
 header.navigation role="banner"
   .navigation-wrapper
-    a.logo
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
+    =link_to image_tag('https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png'), root_path, class: "logo"
     a#js-mobile-menu.navigation-menu-button
       MENU
 
