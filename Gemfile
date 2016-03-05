@@ -22,7 +22,7 @@ gem 'refile-mini_magick'
 gem 'searchkick'
 gem 'font-awesome-sass'
 gem 'simple_form'
-gem 'cocoon'
+# gem 'cocoon'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'

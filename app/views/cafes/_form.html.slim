@@ -5,6 +5,3 @@
       = f.input :contact
       = f.button :submit, class: "btn btn-default"
       = f.simple_fields_for :reviews do |review|
-        = render 'review_fields', :f => review
-      .links
-        = link_to_add_association 'Add Review', f, :reviews
