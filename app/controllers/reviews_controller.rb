@@ -13,7 +13,7 @@ class ReviewsController < ApplicationController
   def create
     @review = Review.new(review_params)
     @review.user_id = current_user.id
-    @review.movie_id = @cafe.id
+    @review.cafe_id = @cafe.id
 
     if @review.save
       redirect_to @cafe
