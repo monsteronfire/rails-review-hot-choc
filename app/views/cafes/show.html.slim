@@ -1,4 +1,9 @@
-h2 =@cafe.name
-p=@cafe.contact
+h2 = @cafe.name
+p = @cafe.contact
+
+div.map
+  p map
+
+= link_to "Write a review", new_cafe_review_path(@cafe)
 
 button= link_to "Go Back to Home", root_path

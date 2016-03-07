@@ -1,1 +1,6 @@
-h2 _form.html.slim
+#review-form
+  = form_for([@cafe, @review]) do |f|
+    fieldset.cafe-form-fields
+      / = f.input :title
+      = f.text_area :comment
+      = f.button :submit, class: "btn btn-default"
